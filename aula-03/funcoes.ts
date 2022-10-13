@@ -22,7 +22,7 @@ let multiplicar = (n1: number, n2: number) => {
 
 let numeros: Array<number> = [5, 1, 12, 20];
 
-function listar(x: Array<number): void{
+function listar(x: Array<number>): void{
     for(let i = 0; i < x.length; i++){
         console.log(x[i]);
     }
@@ -48,7 +48,7 @@ numeros.forEach((x) => {
 console.log('Numeros antes da ordenação : ');
 console.log(numeros);
 numeros.sort();
-console.log('Numeros depois da ordenação : ');
+console.log('Numeros depois da ordenação (ordem incorreta) : ');
 console.log(numeros);
 
 function maior(n1: number, n2: number): number{
@@ -58,3 +58,8 @@ function maior(n1: number, n2: number): number{
 }
 
 console.log(maior(1, 5));
+
+numeros.sort((n1: number, n2: number) => {return n1 - n2});
+
+console.log('Números depois da ordenação (ordem correta) : ');
+console.log(numeros);
