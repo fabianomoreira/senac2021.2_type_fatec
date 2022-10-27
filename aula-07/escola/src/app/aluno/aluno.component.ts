@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Aluno } from './aluno.model';
 
 @Component({
   selector: 'esc-aluno',
   templateUrl: './aluno.component.html'
 })
 export class AlunoComponent implements OnInit {
-  nome = 'João Santos';
-  nota = 7;
-  situacao = 'Aprovado';
-  aprovado = false;
-  
+  @Input() aluno!: Aluno;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
+
