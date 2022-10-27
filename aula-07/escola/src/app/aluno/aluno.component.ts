@@ -8,6 +8,7 @@ export class AlunoComponent implements OnInit {
   nome = 'João Santos';
   nota = 7;
   situacao = 'Aprovado';
+  aprovado = false;
   
   constructor() { }
 

@@ -1,3 +1,7 @@
-<div class="item">Aluno: {{nome}}</div>
-<div class="item">Nota: {{nota}}</div>
-<div class="item">Situação: {{situacao}}</div>
+<div [hidden]="!aprovado">
+    <div class="item">Aluno: {{nome}}</div>
+    <div class="item">Nota: {{nota}}</div>
+    <div class="item">Situação: {{situacao}}</div>
+    <div class="status">O aluno foi Aprovado!</div>
+</div>
+
