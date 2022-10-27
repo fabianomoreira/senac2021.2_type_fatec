@@ -1,6 +1,5 @@
 <esc-cabecalho></esc-cabecalho>
 
 <div class="conteudo">
-  <esc-aluno [aluno]="aluno1"></esc-aluno>
-  <esc-aluno [aluno]="aluno2"></esc-aluno>
+  <esc-aluno *ngFor="let aluno of alunos" [aluno]="aluno"></esc-aluno>
 </div>

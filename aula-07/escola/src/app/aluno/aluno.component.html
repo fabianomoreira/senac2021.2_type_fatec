@@ -1,7 +1,8 @@
-<div [hidden]="!aluno.aprovado">
+<div class="card">
     <div class="item">Aluno: {{aluno.nome}}</div>
     <div class="item">Nota: {{aluno.nota}}</div>
-    <div class="item">Situação: {{aluno.situacao}}</div>
-    <div class="status">O aluno foi Aprovado!</div>
+    <div class="item" *ngIf="aluno.aprovado">Situação: Aprovado</div>
+    <div class="item" *ngIf="!aluno.aprovado">Situação: Reprovado</div>
+    <button (click)="fazerRequerimento()">Requiremento</button>
 </div>
 

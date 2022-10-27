@@ -6,6 +6,9 @@ import { Aluno } from './aluno/aluno.model';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  aluno1: Aluno = {nome:'João Santos', nota: 8, situacao: 'Aprovado', aprovado: true};
-  aluno2: Aluno = {nome: 'Jorge Batista', nota: 6, situacao: 'Aprovado', aprovado: true};
+  alunos: Aluno[] = [
+                     {nome:'João Santos', nota: 8, aprovado: true},
+                     {nome: 'Jorge Batista', nota: 6, aprovado: true},
+                     {nome: 'Carlos da Gama', nota: 1, aprovado: false}
+                    ];
 }

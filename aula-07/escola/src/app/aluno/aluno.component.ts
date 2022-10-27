@@ -13,6 +13,10 @@ export class AlunoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fazerRequerimento(){
+    console.log('Requerimento Recebido!!!');
+  }
+
 }
 
 
